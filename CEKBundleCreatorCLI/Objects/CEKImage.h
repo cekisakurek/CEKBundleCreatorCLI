@@ -10,4 +10,8 @@
 
 @interface CEKImage : NSObject
 
+
++(void)createImagePairsFromRetinaImagePath:(NSURL*)imagePath outputPath:(NSURL*)outputPath error:(NSError **)errorPtr;
+
+
 @end

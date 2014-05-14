@@ -10,6 +10,7 @@
 		143D72681923D191007043AB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 143D72671923D191007043AB /* Foundation.framework */; };
 		143D726B1923D191007043AB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 143D726A1923D191007043AB /* main.m */; };
 		143D726F1923D191007043AB /* CEKBundleCreatorCLI.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 143D726E1923D191007043AB /* CEKBundleCreatorCLI.1 */; };
+		143D72781923D1C7007043AB /* CEKImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 143D72771923D1C7007043AB /* CEKImage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		143D726A1923D191007043AB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		143D726D1923D191007043AB /* CEKBundleCreatorCLI-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CEKBundleCreatorCLI-Prefix.pch"; sourceTree = "<group>"; };
 		143D726E1923D191007043AB /* CEKBundleCreatorCLI.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = CEKBundleCreatorCLI.1; sourceTree = "<group>"; };
+		143D72761923D1C7007043AB /* CEKImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CEKImage.h; path = Objects/CEKImage.h; sourceTree = "<group>"; };
+		143D72771923D1C7007043AB /* CEKImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CEKImage.m; path = Objects/CEKImage.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +76,7 @@
 		143D72691923D191007043AB /* CEKBundleCreatorCLI */ = {
 			isa = PBXGroup;
 			children = (
+				143D72751923D1A0007043AB /* Objects */,
 				143D726A1923D191007043AB /* main.m */,
 				143D726E1923D191007043AB /* CEKBundleCreatorCLI.1 */,
 				143D726C1923D191007043AB /* Supporting Files */,
@@ -86,6 +90,15 @@
 				143D726D1923D191007043AB /* CEKBundleCreatorCLI-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		143D72751923D1A0007043AB /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				143D72761923D1C7007043AB /* CEKImage.h */,
+				143D72771923D1C7007043AB /* CEKImage.m */,
+			);
+			name = Objects;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				143D726B1923D191007043AB /* main.m in Sources */,
+				143D72781923D1C7007043AB /* CEKImage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
